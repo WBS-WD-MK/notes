@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+}
+body {
+  /* background-color: aqua; */
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+.grid-continer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 3rem auto;
+  width: 600px;
+  height: 600px;
+  align-content: center;
+}
+.grid-item {
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 2rem;
+}
+.grid-item:nth-child(odd) {
+  background-color: aquamarine;
+}
+
+.grid-item:nth-child(even) {
+  background-color: salmon;
+}
